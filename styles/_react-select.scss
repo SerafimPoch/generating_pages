@@ -1,0 +1,67 @@
+@mixin my-react-select($bgc, $color, $select-option-focused) {
+  .react-select {
+    position: relative;
+    z-index: 500;
+
+    * {
+      z-index: 500;
+      font-size: 100% !important;
+    }
+
+    &__value-container {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+    }
+
+    &__placeholder {
+      font-weight: normal;
+      font-size: 85%;
+      opacity: 0.75;
+      //text-transform: uppercase;
+    }
+
+    &__single-value {
+      font-weight: 500;
+      font-size: 85%;
+    }
+
+    &__option {
+      &:hover {
+        background-color: rgba(140, 190, 15, 0.2) !important;
+        cursor: pointer;
+      }
+    }
+
+    &__control {
+      height: 40px;
+      min-height: 40px;
+      border: 2px solid rgba(0, 0, 0, 0.1) !important;
+
+      &--is-focused {
+        border: 2px solid rgba(140, 190, 15, 1) !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .react-select__placeholder,
+  .react-select__single-value {
+    font-size: 100% !important;
+  }
+
+  fieldset {
+    .react-select {
+      &__control {
+        border: none !important;
+      }
+    }
+
+    &._border {
+      .react-select {
+        &__control {
+          border: 2px solid rgba(0, 0, 0, 0.1) !important;
+        }
+      }
+    }
+  }
+}

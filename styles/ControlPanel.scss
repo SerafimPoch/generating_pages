@@ -1,0 +1,110 @@
+.page {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(68, 96, 8, 0.05), 0 2px 2px rgba(68, 96, 8, 0.05), 0 4px 4px rgba(68, 96, 8, 0.05),
+    0 6px 8px rgba(68, 96, 8, 0.05);
+  position: relative;
+  margin-top: 40px;
+  min-height: 40px;
+
+  &__basic {
+    width: 100%;
+    display: flex;
+  }
+
+  &__content {
+    margin-top: 40px;
+  }
+
+  &__basicCont {
+    width: 300px;
+    margin-right: 40px;
+  }
+
+  &__pageInfoBlock {
+    margin-bottom: 10px;
+  }
+
+  &__inputField {
+    width: 100%;
+    padding-left: 8px;
+    border: rgba(0, 0, 0, 0.1) 2px solid;
+    outline: none;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+
+  &__checkBoxItem {
+    margin-bottom: 5px;
+  }
+
+  &__createBtn {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.15px;
+    border-radius: 8px;
+    height: 40px;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-width: 0;
+    border-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.list {
+  margin-top: 40px;
+
+  h2 {
+    font-size: 16px;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  &__cont {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 2fr 4fr 1fr 1fr;
+    padding: 10px 20px;
+    opacity: 0.5;
+  }
+
+  &__box {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 2fr 2fr 1fr 1fr;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(68, 96, 8, 0.05), 0 2px 2px rgba(68, 96, 8, 0.05), 0 4px 4px rgba(68, 96, 8, 0.05),
+      0 6px 8px rgba(68, 96, 8, 0.05);
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.15px;
+    border-radius: 8px;
+    height: 40px;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-width: 0;
+    border-style: none;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.25s ease-in-out;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}

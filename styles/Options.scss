@@ -1,0 +1,11 @@
+.Options {
+  button.btn.option {
+    font-size: 13px;
+    margin: 10px 4px 10px 0;
+    padding: 8px 8px;
+
+    &_active {
+      color: blue;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "vars";
+
+input[type="checkbox"].ios8-switch {
+  position: absolute;
+  margin: 8px 0 0 16px;
+
+  &._hide {
+    left: -500%;
+    opacity: 0;
+  }
+}
+
+input[type="checkbox"].ios8-switch + label {
+  position: relative;
+  padding: 0 0 0 50px;
+  // line-height: 2em;
+  // text-transform: uppercase;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+input[type="checkbox"].ios8-switch + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 40px; /* x*5 */
+  height: 24px; /* x*3 */
+  border-radius: 16px; /* x*2 */
+  background: #c8c8c8;
+  transition: all $delay;
+}
+
+input[type="checkbox"].ios8-switch + label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 2px;
+  top: 2px;
+  width: 20px; /* x*3 */
+  height: 20px; /* x*3 */
+  border-radius: 16px; /* x*2 */
+  background: #fff;
+  transition: all $delay;
+  box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.4);
+}
+
+input[type="checkbox"].ios8-switch:checked + label::after {
+  margin-left: 16px;
+}
+
+input[type="checkbox"].ios8-switch:checked + label::before {
+  background: $accent;
+}
+
+label.checkbox__label {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
