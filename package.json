@@ -1,5 +1,5 @@
 {
-  "name": "mjolnir",
+  "name": "gen_pages",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,7 +10,7 @@
   },
   "repository": "https://github.com/Dwalin/mjolnir-tech",
   "keywords": [],
-  "author": "Mjolnir LLC",
+  "author": "Serafim",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.0.0-0",
