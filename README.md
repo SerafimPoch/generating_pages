@@ -1,1 +1,1 @@
-## Generation pages
+## Generating pages
